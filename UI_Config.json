@@ -1,0 +1,36 @@
+﻿{
+  "output_file": "settings.json", 
+  
+  "BaseResponse": {
+    "type": "textbox",
+    "value": "Team member detected in chat! If you're not already following {0}, you should, because they're awesome! Check them out at {1}",
+	"label": "Default Greeting",
+    "tooltip": "Default Greeting used when a team member is detected\n{0} - Chatter's nickname\n{1} - Chatter's Twitch URL",
+	"group": ""
+  },
+  
+  "TeamResponse": {
+    "type": "textbox",
+    "value": "Find out more awesome team members at {0}",
+	"label": "Team Shout-out",
+    "tooltip": "Optional message appended after any greeting, custom or not. \nLeave blank for no message.\n{0} - Team URL",
+	"group": ""
+  },
+  
+  
+  "StreamTeam": {
+   "type": "textbox",
+   "value": "",
+   "label": "Stream Team ID",
+   "tooltip": "Stream Team ID, lowercase, no spaces, eg. rageclub.\nNote: Usually team ID is team name all lowercase and no spaces, but not always.\nRefer to readme for details"
+   },
+  
+  "FetchMembers": {
+    "type": "button",
+    "label": "Update Team List\n(Save settings first)",
+    "tooltip": "Refresh Stream Team list. Uses DecAPI.me",
+    "function": "FetchTeamMembers",
+    "wsevent": "",
+    "group": ""
+  }
+}
