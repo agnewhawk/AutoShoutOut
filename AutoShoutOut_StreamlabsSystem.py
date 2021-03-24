@@ -6,6 +6,7 @@ clr.AddReference("IronPython.Modules.dll")
 
 # Future updates:
 #
+# - 
 # - Multi-team & External list
 #
 
@@ -79,7 +80,7 @@ def Execute(data):
                 greet = MySettings.BaseResponse.format(userDisplay,URL)
                 
             team = MySettings.TeamResponse.format(teamURL)
-            shoutout = greet + "--" + team
+            shoutout = greet + " - " + team
             
             message = shoutout[:507]+'...' if len(shoutout) > 507 else shoutout #Conform to 510 character limit
             Parent.SendStreamMessage(message)  #Message sent to Twitch here
