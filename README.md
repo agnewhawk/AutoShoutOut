@@ -1,6 +1,5 @@
 by Agnew Hawk
 Version: 1.0.0.0
-Last Updated: March 24 2021
 
 Description:
 -------------
@@ -15,7 +14,7 @@ Installation:
 -------------
 
 1) Make sure your Streamlabs Chatbot is set up to work with Python 2.7 scripts according to their manual: https://streamlabs.com/content-hub/post/chatbot-scripts-desktop
-2) Import 'AutoShoutOut' to Streamlabs Chatbot.
+2) Import 'AutoShoutOut' ZIP -file to Streamlabs Chatbot. Uncompression is not needed.
 
 How to Setup and Fetch team list?
 -------------
@@ -31,3 +30,21 @@ After typing in your Team ID, press 'Save Settings' first and only then hit 'Upd
 The script  lets you know if the operation is successful, and the list of team members is saved on your computer.
 
 Finally you should reload all scripts and you're good to go.
+
+How to customize shout-outs for each member?
+-------------
+
+NOTE! If you've custom shout-outs and you re-import team list, the file WILL be overwritten - make sure to back up your shout-outs!
+
+Once you've imported the team list for the first time, 'streamers.json' -file is generated to the script's install directory, in the same place where the script itself is located. This file contains streamer ids with an optional, empty greeting string. It's recommended to open this with Notepad++ or similar.
+
+You can put a custom greeting between the quotes, and the script will show it in the default greeting's place.
+
+Example:
+```
+{
+    "agnewhawk": {
+        "greeting": "Oh, it's Agnew. Who would've thought?"
+    }
+}
+```
