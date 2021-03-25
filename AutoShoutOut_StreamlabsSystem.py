@@ -4,13 +4,6 @@ import ctypes, winsound
 clr.AddReference("IronPython.SQLite.dll")
 clr.AddReference("IronPython.Modules.dll")
 
-# Future updates:
-#
-# - 
-# - Multi-team & External list
-#
-
-
 ScriptName = "AutoShoutoutTeam"
 Website = "https://www.twitch.tv/agnewhawk"
 Creator = "Agnew Hawk"
@@ -86,8 +79,8 @@ def Execute(data):
             Parent.SendStreamMessage(message)  #Message sent to Twitch here
             Streamers.ActiveStreamers.append(user)
             
-        else:
-            Parent.Log("AutoShoutOut", user+ ": No such user in team.") #Remove before deploying or else it flags Every Message Ever
+        #else:
+            #Parent.Log("AutoShoutOut", user+ ": No such user in team.") #Remove before deploying or else it flags Every Message Ever
 def Tick():
     return
     
