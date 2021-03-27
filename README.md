@@ -1,6 +1,3 @@
-by Agnew Hawk
-Version: 1.0.0.0
-
 Description:
 -------------
 Forget configuring events for individual members!
