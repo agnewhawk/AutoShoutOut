@@ -5,7 +5,7 @@
     "type": "textbox",
     "value": "Team member detected in chat! If you're not already following {0}, you should, because they're awesome! Check them out at {1}",
 	"label": "Default Greeting",
-    "tooltip": "Default Greeting used when a team member is detected\n{0} - Chatter's nickname\n{1} - Chatter's Twitch URL",
+    "tooltip": "Default Greeting used when a team member is detected\n{0} - Chatter's nickname\n{1} - Chatter's Twitch URL\n{2} - Last game they played",
 	"group": ""
   },
   
