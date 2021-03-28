@@ -6,6 +6,7 @@ AutoShoutOut enables you to fetch a memberlist of your stream team with a click 
 If a member of that team speaks in Twitch chat, their channel and stream team's team page are automatically shouted out by the chatbot.
 
 You can customize the greets in Script settings, and by editing the streamers.json file you can assign unique greets to each individual team member!
+Parameters supported: Streamer name, Twitch URL and last game they played
 
 Installation:
 -------------
